@@ -9,14 +9,14 @@ export class AsyncdataService {
   getHttpData() {
     return this.http.get("http://localhost:8083/emp");
   }
-  postHttpData(empid, ename, salary) {
+  postHttpData(empid, empname, salary) {
     //this.postdata={    "empid": id,    "empname": name,    "salary": sal}
 
     this.postdata =
       '{    "empid":' +
       empid +
       ',    "empname":"' +
-      ename +
+      empname +
       '",    "salary":' +
       salary +
       "}";
